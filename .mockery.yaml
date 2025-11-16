@@ -1,0 +1,21 @@
+with-expecter: true
+disable-version-string: true
+resolve-type-alias: false
+issue-845-fix: true
+packages:
+    github.com/SteepTaq/avito-backend-internship-2025/internal/service:
+        interfaces:
+            Repository:
+                config:
+                    dir: 'mocks'
+                    filename: 'repository.go'
+                    mockname: 'MockRepository'
+                    outpkg: 'mocks'
+    github.com/SteepTaq/avito-backend-internship-2025/internal/handler:
+        interfaces:
+            Service:
+                config:
+                    dir: 'mocks'
+                    filename: 'service.go'
+                    mockname: 'MockService'
+                    outpkg: 'mocks'

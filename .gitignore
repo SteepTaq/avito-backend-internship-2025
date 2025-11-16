@@ -1,0 +1,15 @@
+.env
+.env.local
+config.*.yaml
+
+.vscode/
+
+*.log
+
+main
+bin/
+
+
+coverage.out
+coverage.html
+
